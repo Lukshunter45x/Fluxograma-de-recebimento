@@ -1,0 +1,122 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0f7fa; /* Cor de fundo suave */
+}
+
+.header {
+    background-color: #0288d1; /* Cor de fundo do cabeçalho */
+    color: #ffffff; /* Cor do texto no cabeçalho */
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20px;
+}
+
+.node {
+    background-color: #ffffff; /* Cor de fundo das caixas */
+    border: 2px solid #0288d1; /* Cor da borda das caixas */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background-color 0.3s, border-color 0.3s; /* Transição suave para mudanças de cor */
+    font-weight: bold;
+}
+
+.node:nth-child(even) {
+    background-color: #f1f8e9; /* Cor de fundo alternada para cada segunda caixa */
+}
+
+.node:hover {
+    background-color: #e1f5fe; /* Cor de fundo ao passar o mouse */
+    border-color: #01579b; /* Cor da borda ao passar o mouse */
+}
+
+/* Estilo específico para a caixa Portaria */
+.node.portaria .label {
+    font-weight: bold;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #0288d1; /* Cor das setas */
+    margin: 0 10px;
+    position: relative;
+}
+
+#arrow1 {
+    margin-top: -10px;
+}
+
+#arrow2 {
+    margin-top: 10px;
+}
+
+#arrow3 {
+    margin-top: 10px;
+}
+
+#arrow4 {
+    margin-top: 10px;
+}
+
+#arrow5 {
+    margin-top: 10px;
+}
+
+#arrow6 {
+    margin-top: 10px;
+}
+
+#arrow7 {
+    margin-top: 10px;
+}
+
+#arrow8 {
+    margin-top: 10px;
+}
+
+#arrow9 {
+    margin-top: 10px;
+}
+
+#thank-you {
+    position: fixed;
+    bottom: 20px;
+    background-color: #4CAF50; /* Cor de fundo da mensagem de agradecimento */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 2s; /* Transição suave para a opacidade */
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxograma de Recebimento de Materiais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Fluxograma de Recebimento </h1>
+    </div>
+    <div class="container">
+        <!-- Portaria -->
+        <div class="node portaria">
+            <div class="label">Portaria</div>
+        </div>
+        <div class="arrow" id="arrow1"></div>
+        <!-- Comunicar Recebimento -->
+        <div class="node" id="comunicacao">
+            <div class="label">Comunicação com o Recebimento</div>
+        </div>
+        <div class="arrow" id="arrow2"></div>
+        <!-- Recebimento -->
+        <div class="node" id="recebimento">
+            <div class="label">Recebimento</div>
+        </div>
+        <div class="arrow" id="arrow3"></div>
+        <!-- Emitir Nota Fiscal e Registrar no Sistema -->
+        <div class="node" id="nota">
+            <div class="label">Emitir Nota Fiscal e Registrar no Sistema</div>
+        </div>
+        <div class="arrow" id="arrow4"></div>
+        <!-- Inspeção de Qualidade -->
+        <div class="node" id="inspecao">
+            <div class="label">Inspeção de Qualidade</div>
+        </div>
+        <div class="arrow" id="arrow5"></div>
+        <!-- Inspecionando o Produto -->
+        <div class="node" id="inspecao-produto">
+            <div class="label">Inspecionar o Produto e fazer liberação</div>
+        </div>
+        <div class="arrow" id="arrow6"></div>
+        <!-- Controle de Estoque -->
+        <div class="node" id="controle">
+            <div class="label">Controle de Estoque</div>
+        </div>
+        <div class="arrow" id="arrow7"></div>
+        <!-- Movimentação -->
+        <div class="node" id="movimentacao">
+            <div class="label">Movimentação do produto</div>
+        </div>
+        <div class="arrow" id="arrow8"></div>
+        <!-- Produção -->
+        <div class="node" id="produca">
+            <div class="label">Produção</div>
+        </div>
+        <div class="arrow" id="arrow9"></div>
+        <!-- Conferência -->
+        <div class="node" id="conferencia">
+            <div class="label">Conferência da compra e registro no sistema</div>
+        </div>
+    </div>
+    <div id="thank-you" class="hidden">Obrigado!</div>
+    <script src="scripts.js"></script>
+    Lukas andrade
+</body>
+</html>
